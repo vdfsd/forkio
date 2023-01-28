@@ -1,0 +1,219 @@
+@import "mixins";
+@import "variables";
+
+.section-four {
+  background-color: #4b3b4e;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.long-line {
+  max-width: 90%;
+  border-top: 2px solid #645766;
+  display: block;
+  margin: 0 auto;
+}
+
+.wrapper__s-f {
+  .title-content__s-f {
+    text-align: center;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+
+    color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 50px;
+  }
+  .wrapper-content__s-f {
+    @include flex-center;
+
+    flex-direction: column;
+    min-width: 100%;
+    
+
+    .wrapper-subscription {
+      @include flex-center;
+      cursor: pointer;
+
+      flex-direction: column;
+
+      background-color: #5f5161;
+      margin-bottom: 40px;
+      max-width: 90%;
+      min-width: 90%;
+
+      &__title {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+
+        color: #ffffff;
+
+        padding: 36px 0px;
+        margin-bottom: 30px;
+
+        background-color: #695b6a;
+
+        width: 100%;
+        text-align: center;
+      }
+
+      &__price {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 84px;
+        text-transform: uppercase;
+
+        color: #ffffff;
+
+        margin-bottom: 20px;
+      }
+
+      &__period {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+
+        color: #ffffff;
+
+        margin-bottom: 38px;
+      }
+
+      &__line {
+        border-top: 5px solid #8d81ac;
+        margin-bottom: 30px;
+        min-width: 24%;
+      }
+
+      &__description {
+        text-align: center;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+
+        color: #ffffff;
+
+        margin-bottom: 38px;
+
+        max-width: 80%;
+        height: 50px;
+      }
+
+      &__btn {
+        background-color: #776b79;
+        border-radius: 40px;
+
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+
+        color: #ffffff;
+
+        padding: 15px 38px;
+        margin-bottom: 36px;
+      }
+    }
+
+    .wrapper-subscription:hover {
+      transform: scale(1.05);
+      transition: 0.7s;
+      background-color: #463048;
+
+      .wrapper-subscription__title {
+        background-color: #402d41;
+        transition: 0.7s;
+      }
+      .wrapper-subscription__period {
+        font-size: 18px;
+        transition: 0.7s;
+      }
+      .wrapper-subscription__btn {
+        background-color: #635264;
+        transition: 0.7s;
+      }
+      .wrapper-subscription__price {
+        font-size: 4.5rem;
+        transition: 0.7s;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .wrapper__s-f {
+    .title-content__s-f {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 50px;
+
+      margin-bottom: 60px;
+      margin-top: 88px;
+    }
+    .wrapper-content__s-f {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 40px;
+
+      .wrapper-subscription {
+        max-width: 38%;
+        min-width: 38%;
+
+        margin-right: 40px;
+        margin-bottom: 70px;
+      }
+      .wrapper-subscription:nth-child(2) {
+        margin-right: 0px;
+      }
+
+
+      .wrapper-subscription:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 993px) {
+  .wrapper__s-f {
+    .title-content__s-f {
+      margin-top: 112px;
+      
+    
+    }
+    .wrapper-content__s-f {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 70px;
+
+      .wrapper-subscription {
+        max-width: 22%;
+        min-width: 22%;
+        margin-right: 30px;
+        margin-bottom: 70px;
+      }
+      .wrapper-subscription:nth-child(2) {
+        margin-right: 40px;
+      }
+
+      .wrapper-subscription:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}

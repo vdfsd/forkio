@@ -1,0 +1,85 @@
+.section-three {
+  background-image: url("../../dist/img/section-three-img/testmonials-bg\ 1.png");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: -12px;
+  padding-top: 80px;
+}
+
+.title-about-fork {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #ffffff;
+  margin-bottom: 53px;
+}
+
+.wrapper-companies {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  .company {
+    &__img {
+      margin-bottom: 16px;
+      height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__text {
+      font-family: "Lato";
+      font-style: italic;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+      margin-bottom: 54px;
+    }
+  }
+}
+
+.description-s-three {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #a291a5;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 481px) {
+  .section-three {
+    margin-bottom: -12px;
+    padding-top: 96px;
+  }
+
+  .wrapper-companies {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    .company {
+      max-width: 45%;
+    }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .section-three {
+    padding-top: 112px;
+  }
+
+  .wrapper-companies {
+    .company {
+      max-width: 28%;
+    }
+  }
+}
